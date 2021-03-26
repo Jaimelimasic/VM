@@ -1,0 +1,13 @@
+[Unit]
+Description=atualizacao de dockers
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=300
+User=root
+ExecStart=/home/ubuntu/at2.sh
+
+[Install]
+WantedBy=multi-user.target

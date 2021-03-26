@@ -1,0 +1,1 @@
+nohup /home/ubuntu/at2.sh
