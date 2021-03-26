@@ -1,7 +1,7 @@
 #!/bin/bash
 #PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
 date > /home/ubuntu/at2.log
-#errdock=0
+errdock=0
 #if docker ps | grep "fairplay";then
 #  echo "doker fairplay ok" >> /home/ubuntu/at2.log
 #else
@@ -33,14 +33,12 @@ echo $errdock > /home/ubuntu/at2.log
 #" >> /home/ubuntu/at2.log
 #  exit
 #fi
-
-##echo "Primeiro vamos dar uma olhada no ubuntu" >> /home/ubuntu/at2.log
-##apt-get update
-##dpkg --configure -a
-##apt-get autoremove --yes
-##apt-get upgrade --yes
+#echo "Primeiro vamos dar uma olhada no ubuntu" >> /home/ubuntu/at2.log
+#apt-get update
+#dpkg --configure -a
+#apt-get autoremove --yes
+#apt-get upgrade --yes
 ###############################
-
 #echo "Agora vamos dar uma olhada no docker" >> /home/ubuntu/at2.log
 #docker login -u figueiro -p U3nhk3RfmsfKk6F registry.axinom.com;
 #docker pull registry.axinom.com/fairplay-api-armhf/app:latest;
