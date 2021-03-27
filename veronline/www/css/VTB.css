@@ -1,0 +1,60 @@
+﻿body {
+    margin-top: 20px;
+    background: #333;
+}
+
+.dash-video-player {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.panel.charts, .panel.debug {
+    margin: 15px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: inherit;
+}
+
+#shaka-player .form-horizontal {
+    margin-top: 20px;
+} 
+
+.licenseInputs {
+    width: 80%;
+    float: left;
+}
+
+.licenseInputs.sm {
+    width: 20%;
+}
+
+button#dash-open-player,
+button#hls-open-player,
+button#open-player {
+    margin-top: 10px;
+}
+
+.notice {
+    font-weight: normal; 
+    font-size: 10px;
+}
+
+.buttons .form-control {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.nav-tabs {
+    border: 0;
+}
