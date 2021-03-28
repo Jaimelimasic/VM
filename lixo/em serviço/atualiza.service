@@ -5,7 +5,7 @@ StartLimitIntervalSec=0
 [Service]
 Type=simple
 Restart=always
-RestartSec=300
+RestartSec=3600
 User=root
 ExecStart=/home/ubuntu/at2.sh
 

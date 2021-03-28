@@ -37,9 +37,10 @@ cp /home/ubuntu/certificado/DeviceCertificateStatusList.json /home/ubuntu/widevi
 	sshpass -p $senha_f rsync -vazhP --partial --inplace -e "ssh -p $porta_f" $user_f@$master:/VM/atualizacoes/docker.sh /home/ubuntu/docker.sh
     chmod 777 /home/ubuntu/docker.sh
 
-#echo "atualização de containers"
-	sshpass -p $senha_f rsync -vazhP --partial --inplace -e "ssh -p $porta_f" $user_f@$master:/VM/atualizacoes/at2.sh /home/ubuntu/at2.sh
-    chmod 777 /home/ubuntu/at2.sh
+#echo "Sincronizar Serviço" 
+sshpass -p $senha_f rsync -vazhP --partial --inplace -e "ssh -p $porta_f" $user_f@$master:/VM/atualizacoes/at2.sh /home/ubuntu/at2.sh
+sshpass -p $senha_f rsync -vazhP --partial --inplace -e "ssh -p $porta_f" $user_f@$master:/VM/atualizacoes/atualiza.service /etc/systemd/system/atualiza.service
+systemctl enable atualiza
 
 #echo "Sincronizar HTML"
 	sshpass -p $senha_f rsync -vazhP --partial --inplace --exclude '*.txt' --exclude 'midia' --exclude 'stats' -e "ssh -p $porta_f" $user_f@$master:/VM/www/ /var/www/html/
